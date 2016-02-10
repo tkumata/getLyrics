@@ -10,17 +10,20 @@
 埋め込んであるスクリプトは GNU 系を回避したはずなので、UNIX / Unix like で動くと思います。当方 EL Capitan で動作確認はしています。
 
 ## 仕様
-- ver3
-    1. Apple Script のコマンドで iTunes で再生中の曲タイトルを取得します。(なので ver3 は Mac 専用です。)
-    2. 歌詞を探して標準出力します。
-    3. while で無限ループしてますが、フラグ入れているので無限に探すことはしません。
+- ver1
+    1. URL を引数にして実行します。(URL はヒトが探します。)
+    2. awk, sed, curl を駆使し、テキストデータだけ抜き出します。
+    3. Ready for UNIX / Unix like
 - ver2
     1. curl で Google 検索し、awk, sed を駆使して検索結果から歌詞ページの候補 URL を抜き出します。
     2. 候補 URL から現状対応しているサイトを探し curl でアクセスします。
     3. awk, sed, curl を駆使し、テキストデータだけ抜き出します。
-- ver1
-    1. URL を引数にして実行します。(URL はヒトが探します。)
-    2. awk, sed, curl を駆使し、テキストデータだけ抜き出します。
+    4. Ready for UNIX / Unix like
+- ver3
+    1. Apple Script のコマンドで iTunes で再生中の曲タイトルを取得します。
+    2. 歌詞を探して標準出力します。
+    3. while で無限ループしてますが、フラグ入れているので無限に探すことはしません。
+    4. Ready for only Mac
 
 各サイトともコピペされないよう色々対策していて面白いです。
 
