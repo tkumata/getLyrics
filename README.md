@@ -13,7 +13,7 @@
 
 !["ver 2 スクショ"](./ScreenShot.png)
 
-埋め込んであるスクリプトは GNU 系を回避したはずなので、UNIX / Unix like で動くと思います。当方 Sierra と Raspbian で動作確認しています。
+埋め込んであるスクリプトは GNU 系を回避したはずなので、UNIX / Unix like で動くと思います。当方 Sierra と Raspbian と Bash on Ubuntu on Windows で動作確認しています。
 
 
 ## 仕様
